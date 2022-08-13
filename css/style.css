@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --padding: 5rem;
+    --primary-color:rgb(50, 145, 201);
+}
+
+html, body {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+.Main_content, .AboutMe, .Projects, .Contact{
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+}
+
+.Main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Header_navbar{
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar_menu{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar_menu li {
+    padding: 1rem;
+}
+
+.Main_content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Main_content img{
+    padding: 4rem;
+}
+
+.Main_content_tittle{
+    font-size: 5rem;
+}
+
+.Main_content_tittle span{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.AboutMe {
+    min-height: 70vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    background-color: var(--primary-color);
+    color: whitesmoke;
+}
+
+.AboutMe_card{
+    max-width: 40rem;
+    padding: 5rem;
+    border-radius: 10px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.AboutMe_card span{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.AboutMe_card button{
+    display: block;
+    margin-top: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.Projects{
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Projects_card{
+    max-width: 20rem;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.Projects_card_img{
+    min-height: 5rem;
+}
+
+.Projects_card span{ 
+    display: block;
+}
+
+.Projects_card_links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.Contact{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact span {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.title, .subtitle {
+    display: block;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: whitesmoke;
+}
